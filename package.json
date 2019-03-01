@@ -4,12 +4,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
-    "start": "node index.js"
+    "start": "node index.js",
+    "server": "json-server --watch db.json"
   },
   "author": "Vlado",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
+    "lowdb": "^1.0.0",
     "moment": "^2.24.0"
   },
   "devDependencies": {
