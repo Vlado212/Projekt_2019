@@ -1,6 +1,7 @@
 ﻿const express = require('express')
 const app = express()
-const port = 6000
+// Use the environment variable or use a given port
+const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => res.send('Games API'))
 app.get('/api', (req, res) => res.send('API version 1.0.0'))
