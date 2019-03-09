@@ -1,6 +1,6 @@
-const express = require('express')
+﻿const express = require('express')
 const app = express()
-const port = 3000
+const port = 6000
 
 app.get('/', (req, res) => res.send('Games API'))
 app.get('/api', (req, res) => res.send('API version 1.0.0'))
@@ -37,3 +37,8 @@ app.put('/api/place', (req, res) => res.send({ ime:'drugaigra', adresa:'Trnsko',
 
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
+//app.listen(port, function () {
+  // console.log('Express server listening on %d, in %s mode', port, app.get('env'));
+// });
+
